@@ -1,0 +1,123 @@
+body {
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: blanchedalmond;
+}
+
+@media screen and (min-width: 200px) {
+  .footer {
+    background-color: lightgreen;
+  }
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  -ms-grid-columns: 22% 47% auto;
+      grid-template-columns: 22% 47% auto;
+  -ms-grid-rows: 6vh auto;
+      grid-template-rows: 6vh auto;
+      grid-template-areas: "left footer right" "left middle right";
+}
+
+.container .footer {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: footer;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80% 20%;
+      grid-template-columns: 80% 20%;
+      grid-template-areas: "leftfooter rightfooter";
+}
+
+.container .footer .leftfooter {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: leftfooter;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 15px;
+  background-color: paleturquoise;
+}
+
+.container .footer .rightfooter {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: rightfooter;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #626666;
+}
+
+.container .left {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: left;
+  display: -ms-grid;
+  display: grid;
+  background: #2c2923;
+  -ms-grid-rows: 6vh;
+      grid-template-rows: 6vh;
+      grid-template-areas: "nava";
+}
+
+.container .left .nava {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: nava;
+  display: -ms-grid;
+  display: grid;
+  background-color: #c06666;
+  -ms-grid-rows: 6vh;
+      grid-template-rows: 6vh;
+      grid-template-areas: "innava";
+}
+
+.container .left .nava .innava {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: innava;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 8px;
+  background-color: white;
+}
+
+.container .left .nava .innava img {
+  height: 30px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.container .middle {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: middle;
+  display: -ms-grid;
+  display: grid;
+  background-color: wheat;
+  overflow-y: scroll;
+}
+
+.container .right {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: right;
+  display: -ms-grid;
+  display: grid;
+}
+/*# sourceMappingURL=style.css.map */

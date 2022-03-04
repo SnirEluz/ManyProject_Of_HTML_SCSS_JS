@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scss/credit.css">
+    <script>
+        function isNumber(evt) {
+         evt = (evt) ? evt : window.event;
+         var charCode = (evt.which) ? evt.which : evt.keyCode;
+         if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+         return false;
+        }
+        return true;
+    }
+    </script>
+</head>
+<body>
+    <div class="main">
+        <div class="dl">
+            <div class="light">
+                <a href="darkcredit.html"><img class="light" src="https://cdn-icons-png.flaticon.com/512/606/606795.png" alt=""></a>
+            </div>
+        </div>
+        <div class="mainbox">
+            <div class="pic"></div>
+            <div class="top">
+                <h3>Credit card detail</h3>
+            </div>
+            <div class="middle">
+                <div class="goback">
+                    <a href="buy.html">
+                        <p>Go back</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <input type="text" autocomplete="cc-number" maxlength="19" placeholder="Card Number" onkeypress="return isNumber(event)">
+                </div>
+                <div class="my">
+                    <div class="months">
+                        <select name="Month">
+                            <option value="january">January</option>
+                            <option value="february">February</option>
+                            <option value="march">March</option>
+                            <option value="april">April</option>
+                            <option value="may">May</option>
+                            <option value="june">June</option>
+                            <option value="july">July</option>
+                            <option value="august">August</option>
+                            <option value="september">September</option>
+                            <option value="october">October</option>
+                            <option value="november">November</option>
+                            <option value="december">December</option>
+                          </select>
+                    </div>
+                    <div class="years">
+                        <select name="Year">
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2016">2025</option>
+                            <option value="2017">2026</option>
+                            <option value="2018">2027</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="cvv">
+                    <input type="tel" maxlength="4" placeholder="CVV">
+                </div>
+                <div class="info">
+                    <p>3 or 4 digits usually found on the signature strip</p>
+                </div>
+            </div>
+            <div class="bottom">
+                <button class="button">Submit</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

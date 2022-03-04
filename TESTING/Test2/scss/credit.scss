@@ -1,0 +1,229 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: roboto;
+    -webkit-select:all;
+}
+@mixin box {
+    border: 1px rgba(128, 128, 128, 0.322) solid;
+    border-radius: 5px;
+    outline: none;
+}
+@mixin focusbox {
+    border: 1px rgba(230, 224, 173, 0.836) solid;
+    border-radius: 5px;
+    outline: none;
+}
+@mixin hoverbox {
+    :hover{
+        border: 1px rgba(230, 224, 173, 0.836) solid;
+        outline: none;
+    }
+}
+@mixin hoverbox {
+    border: 1px rgba(230, 224, 173, 0.836) solid;
+    outline: none;
+}
+.main {
+    height: 100vh;
+    background: linear-gradient(rgba(233, 210, 0, 0.842), rgba(233, 210, 0, 0.411), rgb(255, 255, 255));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .dl{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        width: 55px;
+        height: 30px;
+        background: rgb(255, 255, 255);
+        box-shadow: 0px 0px 10px 3px rgba(226, 226, 226, 0.911);
+        border-radius: 20px;
+        position: fixed;
+        top: 20px;
+        right: 40px;
+        .light{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 22px;
+            width: 22px;
+            border-radius: 50px;
+            background: rgb(236, 236, 236);
+            margin: 7px;
+            img{
+                height: 16px;
+                width: 16px;
+                opacity: 70%;
+            }
+        }
+    }
+    .mainbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height:430px;
+        width: 400px;
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0px 0px 51px 10px rgba(226, 226, 226, 0.911);
+        transition: 1s;
+        .top {
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid rgba(230, 224, 173, 0.219);
+            h3{
+                color: rgb(66, 66, 66);
+                padding-top: 10px;
+                width: 300px;
+                font-size: 22px;
+                font-weight:300;
+            }
+        }
+        .middle {
+            height: 280px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .goback{
+                width: 300px;
+                a, p{
+                    text-align: left;
+                    text-decoration: none;
+                    border-bottom: none;
+                    color: rgb(117, 117, 117);
+                    font-size: 12px;
+                    padding-bottom: 10px;
+                }
+            }
+            .card {
+                margin: 10px;
+                input {
+                    @include box();
+                    padding: 13px 140px 13px 15px;
+                }
+                input:hover{
+                    @include hoverbox();
+                }
+                input:focus {
+                    @include focusbox();
+                }
+                ::placeholder {
+                    color: rgb(105, 105, 105);
+                    font-weight: 400;
+                }
+                :focus::placeholder {
+                    color: transparent;
+                }
+            }
+            .my {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 10px;
+
+                .months {
+                    select {
+                        color: rgb(83, 83, 83);
+                        font-weight: 400;
+                        @include box();
+                        margin: 5px;
+                        padding: 13px 67.5px 13px 15px;
+                    }
+                    :hover{
+                        @include hoverbox();
+                    }
+                    :focus {
+                        @include focusbox();
+                    }
+                }
+                .years {
+                    select {
+                        color: rgb(83, 83, 83);
+                        font-weight: 400;
+                        @include box();
+                        margin: 5px;
+                        padding: 13px 57.5px 13px 15px;
+                    }
+                    :hover{
+                        @include hoverbox();
+                    }
+                    :focus {
+                        @include focusbox();
+                    }
+                }
+
+            }
+            .cvv {
+                margin: 10px;
+                input {
+                    @include box();
+                    padding: 13px 140px 13px 15px;
+                }
+                input:hover{
+                    @include hoverbox();
+                }
+                input:focus {
+                    @include focusbox();
+                }
+                :focus::placeholder {
+                    color: transparent;
+                }
+                ::placeholder {
+                    color: rgb(83, 83, 83);
+                    font-weight: 400;
+                }
+            }
+            .info {
+                padding-top: 10px;
+                padding-left: 2px;
+                font-size: 12px;
+                font-weight: 100;
+                width: 300px;
+            }
+        }
+        .bottom {
+            height:80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 30px;
+            button{
+                font-size: 13px;
+                font-weight: 400;
+                outline: none;
+                border: none;
+                background: none;
+                padding: 0;
+                height: 45px;
+                width: 300px;
+                border-radius: 5px;
+                background: rgba(243, 220, 8, 0.938);
+            }
+            button:hover{
+                background: rgba(243, 220, 8, 0.733);
+            }
+        }
+    }
+    .mainbox:hover{
+        transform: scale(1.02);
+        height: 480px;
+        .pic{
+            position: fixed;
+            height:150px;
+            width: 150px;
+            top: -90px;
+            right:125px;
+            background-image: url(https://cdn-icons-png.flaticon.com/512/3443/3443846.png);
+            background-size: cover;
+            animation: fadein 1s linear;
+        }
+        @keyframes fadein {
+            0%   { opacity:0; }
+            100% { opacity:1; }
+        }
+    }
+}

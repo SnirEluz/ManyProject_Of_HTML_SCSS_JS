@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background-color: #01071a;
+}
+
+.main .mainbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 700px;
+  width: 850px;
+  border-radius: 2px;
+  background: white;
+}
+
+.main .mainbox .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 32px;
+  width: 850px;
+  background-color: #01071a;
+  z-index: 100;
+}
+
+.main .mainbox .tradingview-widget-container {
+  position: absolute;
+  z-index: 2;
+}
+
+@media (max-width: 600px) {
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+  }
+  .main .mainbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 700px;
+    width: 850px;
+    border-radius: 2px;
+    background: white;
+  }
+  .main .mainbox .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 32px;
+    width: 850px;
+    background-color: #01071a;
+    z-index: 100;
+  }
+  .main .mainbox .tradingview-widget-container {
+    position: absolute;
+    z-index: 2;
+  }
+}
+/*# sourceMappingURL=test3.css.map */

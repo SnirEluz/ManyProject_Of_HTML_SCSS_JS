@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(95, 41, 142);
+    background: linear-gradient(90deg, rgba(95, 41, 142, 1) 0%, rgba(54, 23, 125, 1) 48%, rgba(14, 20, 25, 1) 100%);
+
+    .loginbox {
+        width: 30rem;
+        height: 25rem;
+        position: absolute;
+        border-radius: 20px;
+        background: rgb(51, 83, 106);
+        background: linear-gradient(
+            23deg,
+            rgb(14, 13, 13) 0%,
+            rgb(0, 0, 0) 34%,
+            rgb(21, 12, 41) 91%,
+            rgb(0, 0, 0) 100%
+        );
+        box-shadow: 0px 0px 38px -12px rgba(255, 255, 255, 0.56);
+        -webkit-box-shadow: 0px 0px 38px -12px rgba(255, 255, 255, 0.56);
+        -moz-box-shadow: 0px 0px 38px -12px rgba(255, 255, 255, 0.56);
+
+        h2 {
+            text-align: center;
+            color: #ffffff;
+            margin-top: 50px;
+            font-family: roboto;
+        }
+
+        input {
+            position: relative;
+            font-size: 16px;
+            width: 80%;
+            left: 10%;
+            right: 10%;
+            color: rgb(255, 255, 255);
+            margin-bottom: 30px;
+            margin-top: 26px;
+            padding-top: 15px;
+
+            border: none;
+            border-bottom: 1px solid #fff;
+            outline: none;
+            background: transparent;
+        }
+
+        input:focus {
+            border: none;
+            border-bottom: 3px solid #fff;
+            outline: none;
+            background: transparent;
+        }
+
+        ::placeholder {
+            color: rgba(255, 255, 255, 0.719);
+            font-family: roboto;
+            font-size: 14px;
+            font-weight: 100px;
+            position: absolute;
+            bottom: 20px;
+        }
+        ::placeholder:focus {
+            color: black;
+        }
+
+        button {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.589);
+            color: white;
+            border-radius: 13px;
+            padding: 7px 20px;
+            font-size: 20px;
+            font-family: roboto;
+            position: relative;
+            left: 10%;
+            margin-top: 5%;
+        }
+        
+        button:hover {
+            background: transparent;
+            color: white;
+            background: rgba(105, 44, 125, 0.432);
+            border: 1px solid rgba(105, 44, 125, 0.67);
+            border-radius: 10px;
+            font-size: 20px;
+            font-family: roboto;
+            position: relative;
+            left: 10%;
+            margin-top: 5%;
+            box-shadow: 0px 0px 72px 30px rgba(105, 44, 125, 0.67);
+            -webkit-box-shadow: 0px 0px 72px 30px rgba(105, 44, 125, 0.67);
+            -moz-box-shadow: 0px 0px 72px 30px rgba(105, 44, 125, 0.67);
+        }
+    }
+}

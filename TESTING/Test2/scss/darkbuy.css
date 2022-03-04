@@ -1,0 +1,422 @@
+* {
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: roboto;
+}
+
+html {
+  background: black;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.main {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.842)), color-stop(rgba(255, 255, 255, 0.596)), to(white));
+  background: linear-gradient(rgba(255, 255, 255, 0.842), rgba(255, 255, 255, 0.596), white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 55px;
+  height: 30px;
+  background: white;
+  -webkit-box-shadow: 0px 0px 10px 3px rgba(226, 226, 226, 0.911);
+          box-shadow: 0px 0px 10px 3px rgba(226, 226, 226, 0.911);
+  border-radius: 20px;
+  position: fixed;
+  top: 20px;
+  right: 40px;
+}
+
+.main .dl .dark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 22px;
+  width: 22px;
+  border-radius: 50px;
+  background: #c9c9c9;
+  margin: 7px;
+}
+
+.main .dl .dark img {
+  height: 16px;
+  width: 16px;
+  opacity: 70%;
+}
+
+.main .mainbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 430px;
+  width: 400px;
+  background: white;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 51px 10px rgba(226, 226, 226, 0.911);
+          box-shadow: 0px 0px 51px 10px rgba(226, 226, 226, 0.911);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.main .mainbox .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.main .mainbox .top .buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  width: 200px;
+  height: 70px;
+  border-bottom: 2px #f5e448 solid;
+}
+
+.main .mainbox .top .sell, .main .mainbox .top a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  width: 200px;
+  height: 70px;
+  border-bottom: 2px rgba(128, 128, 128, 0.219) solid;
+  text-decoration: none;
+}
+
+.main .mainbox .top .sell:hover {
+  border-bottom: 2px #f5e448 solid;
+}
+
+.main .mainbox .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 400px;
+  height: 40px;
+}
+
+.main .mainbox .footer p {
+  font-size: 12px;
+  color: #4d4d4d;
+  font-weight: 300;
+  padding-left: 20px;
+}
+
+.main .mainbox .middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 210px;
+  width: 400px;
+}
+
+.main .mainbox .middle .from {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 95px;
+  width: 360px;
+  background: rgba(236, 236, 236, 0.568);
+  border-radius: 10px;
+}
+
+.main .mainbox .middle .from .title {
+  padding-left: 21px;
+  font-weight: 300;
+}
+
+.main .mainbox .middle .from .swap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+  width: 360px;
+}
+
+.main .mainbox .middle .from .swap .amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 230px;
+  height: 50px;
+}
+
+.main .mainbox .middle .from .swap .amount input {
+  padding: 24px 60px 10px 20px;
+  outline: none;
+  border: 0px;
+  background: none;
+}
+
+.main .mainbox .middle .from .swap .coins {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 130px;
+  height: 50px;
+}
+
+.main .mainbox .middle .from .swap .coins .coin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100px;
+  height: 40px;
+  background: white;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(226, 226, 226, 0.911);
+          box-shadow: 0px 0px 5px 2px rgba(226, 226, 226, 0.911);
+}
+
+.main .mainbox .middle .from .swap .coins .coin h2 {
+  font-size: 13px;
+}
+
+.main .mainbox .middle .from .swap .coins .coin .eth {
+  height: 30px;
+  position: relative;
+  left: 5px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.main .mainbox .middle .from .swap .coins .coin .arrow {
+  opacity: 70%;
+  height: 8px;
+}
+
+.main .mainbox .middle .to {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 95px;
+  width: 360px;
+  background: rgba(236, 236, 236, 0.568);
+  border-radius: 10px;
+}
+
+.main .mainbox .middle .to .title {
+  padding-left: 21px;
+  font-weight: 300;
+}
+
+.main .mainbox .middle .to .swap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+  width: 360px;
+}
+
+.main .mainbox .middle .to .swap .amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 230px;
+  height: 50px;
+}
+
+.main .mainbox .middle .to .swap .amount input {
+  padding: 24px 60px 10px 20px;
+  outline: none;
+  border: 0px;
+  background: none;
+}
+
+.main .mainbox .middle .to .swap .coins {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 130px;
+  height: 50px;
+}
+
+.main .mainbox .middle .to .swap .coins .coin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100px;
+  height: 40px;
+  background: white;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(226, 226, 226, 0.911);
+          box-shadow: 0px 0px 5px 2px rgba(226, 226, 226, 0.911);
+}
+
+.main .mainbox .middle .to .swap .coins .coin h2 {
+  font-size: 13px;
+}
+
+.main .mainbox .middle .to .swap .coins .coin .eth {
+  height: 30px;
+  position: relative;
+  left: 5px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.main .mainbox .middle .to .swap .coins .coin .arrow {
+  opacity: 70%;
+  height: 8px;
+}
+
+.main .mainbox .middle .from:hover,
+.main .mainbox .middle .to:hover {
+  background: rgba(177, 177, 177, 0.274);
+}
+
+.main .mainbox .bottom {
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.main .mainbox .bottom button {
+  font-size: 13px;
+  font-weight: 400;
+  outline: none;
+  border: none;
+  background: none;
+  padding: 0;
+  height: 45px;
+  width: 360px;
+  border-radius: 5px;
+  background: rgba(243, 220, 8, 0.938);
+}
+
+.main .mainbox .bottom button:hover {
+  background: rgba(243, 220, 8, 0.733);
+}
+/*# sourceMappingURL=darkbuy.css.map */

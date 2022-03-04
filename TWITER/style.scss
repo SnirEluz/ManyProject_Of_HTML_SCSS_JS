@@ -1,0 +1,102 @@
+
+
+body{
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: blanchedalmond;
+}
+
+@media screen and (min-width: 200px) {
+    .footer{
+      background-color: lightgreen;
+    }
+  }
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 22% 47% auto;
+    grid-template-rows: 6vh auto;
+    grid-template-areas: 
+    "left footer right"
+    "left middle right"
+    ;
+
+    .footer{
+        grid-area: footer;
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-template-areas: 
+        "leftfooter rightfooter"
+        ;
+
+        .leftfooter{
+            grid-area: leftfooter;
+            display: flex;
+            align-items: center;
+            padding-left: 15px;
+            background-color: paleturquoise;
+        }
+        .rightfooter{
+            grid-area: rightfooter;
+            display: flex;
+            background-color: rgb(98, 102, 102);
+        }
+
+
+    }
+
+    .left{
+        grid-area: left;
+        display: grid;
+        background: rgb(44, 41, 35);
+        grid-template-rows: 6vh;
+        grid-template-areas: 
+        "nava"
+        ;
+
+        .nava {
+            grid-area: nava;
+            display: grid;
+            background-color: rgb(192, 102, 102);
+            grid-template-rows: 6vh;
+            grid-template-areas: 
+            "innava"
+            ;
+
+            .innava{
+                grid-area: innava;
+                display: flex;
+                align-items: center;
+                margin: 8px;
+                background-color: rgb(255, 255, 255);
+              
+            }
+            .innava img{
+                height: 30px;
+                padding-right: 10px;
+                padding-left: 10px;
+               
+            }
+        }
+
+
+    }
+
+    .middle{
+        grid-area: middle;
+        display: grid;
+        background-color: wheat;
+        overflow-y: scroll;
+        
+     
+
+    }
+
+    .right{
+        grid-area: right;
+        display: grid;
+
+    }
+
+}

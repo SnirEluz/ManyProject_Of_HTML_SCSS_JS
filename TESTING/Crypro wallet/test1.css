@@ -1,0 +1,493 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.main {
+  min-height: 100vh;
+  background: white;
+  background: -webkit-gradient(linear, left bottom, right top, from(#12313f), to(#acd4da));
+  background: linear-gradient(to right top, #12313f, #acd4da);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .glass {
+  height: 740px;
+  width: 1000px;
+  min-width: 900px;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.2)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2));
+  border-radius: 2rem;
+  z-index: 2;
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .glass .db {
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.2)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2));
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-radius: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.main .glass .db .users {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .glass .db .users img {
+  height: 50px;
+  margin: 10px;
+}
+
+.main .glass .db .users h2 {
+  font-weight: 500;
+}
+
+.main .glass .db .users h3 {
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.main .glass .db .menus .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+}
+
+.main .glass .db .menus h3 {
+  font-size: 17px;
+  padding: 10px;
+  font-weight: 400;
+  color: #002344;
+}
+
+.main .glass .db .menus h3:hover {
+  font-size: 18px;
+  color: #004585;
+}
+
+.main .glass .db .menus img {
+  height: 15px;
+  opacity: 70%;
+}
+
+.main .glass .db .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left bottom, right top, from(#3eb9f1), to(#acd4da));
+  background: linear-gradient(to right top, #3eb9f1, #acd4da);
+  width: 200px;
+  height: 120px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.main .glass .db .footer h3 {
+  width: 30px;
+  font-size: 30px;
+  margin-left: 15px;
+  z-index: 2;
+  color: rgba(0, 0, 0, 0.932);
+}
+
+.main .glass .db .footer img {
+  height: 200px;
+  margin-left: 10px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 90%;
+  transition: 1s;
+  position: relative;
+  -webkit-animation: img 5s infinite 3s linear;
+          animation: img 5s infinite 3s linear;
+}
+
+.main .glass .wallet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.main .glass .wallet .balance {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.404);
+  margin: 0px 30px;
+  padding: 20px 0px;
+  border-radius: 20px;
+}
+
+.main .glass .wallet .balance .leftbalance {
+  width: 40%;
+}
+
+.main .glass .wallet .balance .leftbalance h2 {
+  font-weight: 100;
+  font-size: 22px;
+}
+
+.main .glass .wallet .balance .leftbalance h3 {
+  font-weight: 400;
+  font-size: 13px;
+  color: #3d3d3d;
+  margin-bottom: 3px;
+}
+
+.main .glass .wallet .balance .leftbalance h1 {
+  font-weight: 600;
+  font-size: 23px;
+  margin-bottom: 3px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-animation: green 7s linear 3s infinite;
+          animation: green 7s linear 3s infinite;
+}
+
+.main .glass .wallet .balance .leftbalance h4 {
+  font-weight: 500;
+  font-size: 17px;
+  color: #07c500;
+  margin-bottom: 3px;
+}
+
+.main .glass .wallet .balance .leftbalance a, .main .glass .wallet .balance .leftbalance h5 {
+  font-weight: 100;
+  font-size: 12px;
+  color: #3d6780;
+  text-decoration: none;
+}
+
+.main .glass .wallet .balance .rightbalance {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 350px;
+  height: 120px;
+}
+
+.main .glass .wallet .balance .rightbalance .c {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+}
+
+.main .glass .wallet .balance .rightbalance .c .time {
+  background-color: #22ca00;
+  height: 20px;
+  width: 15px;
+  margin: 0px 4px;
+}
+
+.main .glass .wallet .balance .rightbalance .c .time2 {
+  background-color: #22ca00;
+  height: 40px;
+  width: 15px;
+  margin: 0px 4px;
+}
+
+.main .glass .wallet .balance .rightbalance .c .time4 {
+  background-color: #22ca00;
+  height: 30px;
+  width: 15px;
+  margin: 0px 4px;
+}
+
+.main .glass .wallet .balance .rightbalance .c .time6 {
+  background-color: #22ca00;
+  height: 43px;
+  width: 15px;
+  margin: 0px 4px;
+}
+
+.main .glass .wallet .balance .rightbalance .c .time7 {
+  background-color: #22ca00;
+  height: 50px;
+  width: 15px;
+  margin: 0px 4px;
+}
+
+.main .glass .wallet .balance .rightbalance .c .time8 {
+  background-color: #22ca00;
+  height: 55px;
+  width: 15px;
+  margin: 0px 4px;
+}
+
+.main .glass .wallet .balance .rightbalance .c .time9 {
+  background-color: #22ca00;
+  height: 65px;
+  width: 15px;
+  margin: 0px 4px;
+}
+
+.main .glass .wallet .balance .rightbalance .c .time10 {
+  background-color: #e60000;
+  height: 62px;
+  width: 15px;
+  margin: 0px 4px;
+}
+
+.main .glass .wallet .balance .rightbalance .c .time11 {
+  background-color: #e60000;
+  height: 60px;
+  width: 15px;
+  margin: 0px 4px;
+}
+
+.main .glass .wallet .balance .rightbalance .c .time12 {
+  background-color: #e60000;
+  height: 50px;
+  width: 15px;
+  margin: 0px 4px;
+}
+
+.main .glass .wallet .balance .rightbalance .c .time13 {
+  background-color: #e60000;
+  height: 40px;
+  width: 15px;
+  margin: 0px 4px;
+}
+
+.main .glass .wallet .balance .rightbalance .button button {
+  border-radius: 20px;
+  margin: 4px;
+  padding: 7px 22px;
+  border: none;
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(1, rgba(175, 175, 175, 0.226)), to(#acd4da));
+  background: linear-gradient(to right top, rgba(175, 175, 175, 0.226) 1, #acd4da);
+}
+
+.main .glass .wallet .balance .rightbalance .button .first {
+  background: -webkit-gradient(linear, left bottom, right top, from(#0cabf557), to(#acd4da));
+  background: linear-gradient(to right top, #0cabf557, #acd4da);
+}
+
+.main .glass .wallet .balance .rightbalance button:hover {
+  background: -webkit-gradient(linear, left bottom, right top, from(#0cabf557), to(#acd4da));
+  background: linear-gradient(to right top, #0cabf557, #acd4da);
+}
+
+.main .glass .wallet .datas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 15px 30px;
+  background-color: rgba(255, 255, 255, 0.726);
+  border-radius: 20px;
+}
+
+.main .glass .wallet .datas #market {
+  background: none;
+}
+
+.main .glass .wallet .datas #market h2 {
+  font-weight: 600;
+  padding-left: 12px;
+  padding-right: 19px;
+}
+
+.main .glass .wallet .datas .data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.774)), to(rgba(255, 255, 255, 0.329)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.774), rgba(255, 255, 255, 0.329));
+  padding: 20px;
+}
+
+.main .glass .wallet .datas .data h2 {
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.main .glass .wallet .datas .data .red {
+  color: red;
+}
+
+.main .glass .wallet .datas .data .green {
+  color: #00ce00;
+}
+
+.main .glass .wallet .datas #lastdata {
+  border-radius: 0px 0px 20px 20px;
+}
+
+.main .glass .wallet .datas .data:hover {
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.774)), to(rgba(221, 221, 221, 0.671)));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.774), rgba(221, 221, 221, 0.671));
+}
+
+.circle1,
+.circle2 {
+  width: 300px;
+  height: 300px;
+  background: white;
+  background: -webkit-gradient(linear, right bottom, left top, from(rgba(255, 255, 255, 0.397)), to(rgba(255, 255, 255, 0.1)));
+  background: linear-gradient(to left top, rgba(255, 255, 255, 0.397), rgba(255, 255, 255, 0.1));
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle1 {
+  top: 7%;
+  right: 10%;
+}
+
+.circle2 {
+  bottom: 5%;
+  left: 8%;
+}
+
+@-webkit-keyframes img {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes img {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes green {
+  0% {
+    color: black;
+  }
+  20% {
+    color: #00c500;
+  }
+  40% {
+    color: black;
+  }
+  100% {
+    color: black;
+  }
+}
+
+@keyframes green {
+  0% {
+    color: black;
+  }
+  20% {
+    color: #00c500;
+  }
+  40% {
+    color: black;
+  }
+  100% {
+    color: black;
+  }
+}
+/*# sourceMappingURL=test1.css.map */

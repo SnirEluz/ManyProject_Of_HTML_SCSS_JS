@@ -1,0 +1,380 @@
+body{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+
+    grid-area: container;
+    height: 100vh;
+    display: grid;
+    overflow-x: hidden;
+    grid-template-columns: 100%;
+    grid-template-rows: 55px auto;
+    grid-template-areas: 
+    "footer "
+    "feed  "
+    ;
+}
+.footer {
+    display: grid;
+    justify-content: center;
+    border-bottom: solid 1px rgb(214, 214, 214);
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 900;
+
+    grid-template-columns: 33% 42% 23%;
+    grid-template-areas: 
+    "footera footerb footerc"
+}
+.footera{
+    grid-area: footera;
+    display: grid;
+    align-items: center;
+    justify-content: start;
+    position: sticky;
+    top: 0;
+    z-index: 900;
+}
+.footera > img {
+    height: 27px;
+
+}
+
+.footerb{
+    grid-area: footerb;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+
+}
+.footerb > input{
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(194, 194, 194);
+    background: rgb(245, 245, 245);
+    font-family: roboto;
+    color: gray;
+    text-align: center;
+    background-image: url(imgs2/search-interface-symbol.png);
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position-x: 60px;
+    background-position-y: center;
+
+
+}
+.footerc{
+    grid-area: footerc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+}
+.footerc > img {
+    margin: 4%;
+    height: 23px;
+
+}
+
+
+.feed{
+
+    grid-area: feed;
+    display: grid;
+    justify-content: center;
+    background: rgb(245, 245, 245);
+    grid-template-columns: 600px 200px;
+    grid-template-rows: 140px auto;
+    grid-template-areas: 
+    "alluser sidebar"
+    "feedpost sidebar"
+    ;
+    
+}
+
+.sidebar{
+    grid-area: sidebar;
+    display: flex;
+    margin-top: 25px;
+    margin-left: 20px;
+    background: rgba(236, 236, 236, 0.438);
+    border: solid 1px rgb(214, 214, 214);
+
+    padding-right: 350px;
+   
+
+}
+
+
+/* users */
+.alluser{
+    grid-template: alluser;
+    display: grid;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    flex-direction: row;
+    margin: 25px 20px 0px -30px;
+    background: rgb(255, 255, 255);
+    border: solid 1px rgb(214, 214, 214);
+
+    grid-template-columns: 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px;
+    grid-template-rows: 113px;
+    grid-template-areas: 
+    "usera userb"
+    ;
+  
+}
+.textuser{
+    color: rgb(0, 0, 0);
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 11px;
+    font-family: roboto;
+
+
+}
+.imgsuser{
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 7px;
+    width: 55px;
+    height: 55px;
+    border-radius: 55px;
+    border: 2px  solid ;
+    border-color: rgb(185, 21, 71);
+
+   
+}
+.users{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+    flex-direction: column;  
+    margin-left: 20px;
+}
+::-webkit-scrollbar {
+    background: rgba(255, 255, 255, 0);
+    width: 6px;
+    height: 0;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(90, 90, 90);  
+    border-radius: 50px;
+}
+/*  */
+
+
+
+
+/* post */
+.feedpost{
+    grid-area: feedpost;
+    display: grid;
+    margin: 25px 20px 0px -30px;
+    background: rgb(245, 245, 245);
+    grid-template-areas: 
+    "posta"
+    "postb"
+    "postc"
+    "postd"
+    
+    ;
+}
+.posta{
+    grid-area: posta;
+    display: grid;
+    background: rgb(255, 255, 255);
+    border: solid 1px rgb(219, 219, 219);
+    grid-template-rows: 65px 470px 40px 100px auto;
+    grid-template-areas: 
+    "top"
+    "image"
+    "actions"
+    "comment"
+    "leftcomment"
+    ;
+}
+.postb{
+    grid-area: postb;
+    display: grid;
+    margin-top: 25px;
+    background: rgb(226, 226, 226);
+    border: solid 1px rgb(219, 219, 219);
+    grid-template-rows: 65px 470px 40px 100px auto;
+    grid-template-areas: 
+    "top"
+    "image"
+    "actions"
+    "comment"
+    "leftcomment"
+    ;
+}
+.postc{
+    grid-area: postc;
+    display: grid;
+    margin-top: 25px;
+    background: rgb(226, 226, 226);
+    border: solid 1px rgb(219, 219, 219);
+    grid-template-rows: 65px 470px 40px 100px auto;
+    grid-template-areas: 
+    "top"
+    "image"
+    "actions"
+    "comment"
+    "leftcomment"
+    ;
+}
+.postd{
+    grid-area: postd;
+    display: grid;
+    margin-top: 25px;
+    background: rgb(226, 226, 226);
+    border: solid 1px rgb(219, 219, 219);
+    grid-template-rows: 65px 470px 40px 100px auto;
+    grid-template-areas: 
+    "top"
+    "image"
+    "actions"
+    "comment"
+    "leftcomment"
+    ;
+}
+
+
+
+/* top */
+.top{
+    grid-area: top;
+    display: flex;
+    background: rgb(255, 255, 255);
+}
+.top > img {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    border: 2px  solid ;
+    border-color: rgb(185, 21, 71);
+}
+.top > h3 {
+    color: rgb(0, 0, 0);
+    margin-left: 20px;
+    margin-top: 13px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: roboto;
+}
+.top > h4 {
+    color: rgb(0, 0, 0);
+    margin-left: -71px;
+    margin-top: 36px;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: roboto;
+}
+
+/* image */
+.image{
+    grid-area: image;
+    display: flex;
+}
+
+/* actions */
+.actions{
+    grid-area: actions;
+    display: flex;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    position: relative;
+}
+.actions > img {
+    height: 25px;
+    margin: 5px;
+    margin-left: 10px;
+}
+.actions > .rightt > img {
+    grid-area: actions;
+    display: flex;
+    position: absolute;
+    right: 10px;
+    bottom: 7px;
+    height:  25px;
+
+}
+
+/* comment */
+.comment{
+    grid-area: comment;
+    display: flex;
+    flex-direction: column;
+    padding: -20px;
+    background: rgb(255, 255, 255);
+}
+.comment > h4 {
+    margin: 4px;
+    margin-left: 9px;
+    font-family: roboto;
+    font-size: 13px;
+    font-weight: 300;
+}
+.bold{
+    font-family: roboto;
+    font-weight:400;
+    font-size: 13px;
+}
+.commentgray{
+    font-family: roboto;
+    font-weight:500;
+    font-size: 13px;
+    color: rgb(82, 82, 82);
+}
+
+/* leftcomment */
+.leftcomment{
+    grid-area: leftcomment;
+    display: grid;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    border-top: solid 1px rgb(214, 214, 214);
+
+    grid-template-columns: 60px auto;
+    grid-template-areas: 
+    "leftleft rightright"
+    
+    ;
+}
+.rightright{
+    grid-area: rightright;
+    display: flex;
+}
+.rightright > input{
+    padding-right: 400px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+
+    border: 0px;
+    grid-area: rightright;
+    display: flex;
+}
+.leftleft{
+    grid-area: leftleft;
+    display: flex;
+    height: 25px;
+
+    margin-left: 15px;
+}
+/*  */

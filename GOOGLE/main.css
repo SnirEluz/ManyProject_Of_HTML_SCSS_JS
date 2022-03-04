@@ -1,0 +1,598 @@
+.footer{
+    background: rgb(255, 255, 255);
+    height: 6vh;
+    width: 100vw;
+    border-bottom: 1px solid rgb(238, 238, 238);
+
+
+}
+.tt{
+    position: relative;
+    margin: 5px;
+    left: 10px;
+    top: 10px;
+}
+
+#menutab{
+    position: absolute;
+    right: 0;
+    top: 2px;
+}
+#search{
+    text-align: right;
+    background-color: #f2f4f7;
+    border: 0;
+    border-radius: 5px;
+    padding:1.7vh 6vw 1.7vh 20vw;
+    position: absolute;
+    right: 30vw;
+    top: 5px;
+
+    background-image: url(imgs2/search-interface-symbol.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position-x: 90%; 
+    background-position-y: center;
+}
+
+
+
+
+.bottomfooter{
+    background: rgb(255, 255, 255);
+    height: 5.5vh;
+    width: 72vw;
+    position: absolute;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    z-index: 900;
+
+}
+
+#markbar{
+    position: absolute; 
+    right: 0px;
+    top:3px;
+    padding: 9px;
+
+}
+#menuicon{
+    position: absolute; 
+    right: 40px;
+    bottom: 4px;
+    padding: 1px;
+}
+#menuicon:hover{
+    position: absolute; 
+    right: 35px;
+    bottom: -1px;
+    background-color: rgb(230, 230, 230);
+    padding: 5px;
+    border-radius: 20px;
+}
+#reficon{
+    position: absolute; 
+    right: 68px;
+    top:-4px;
+    padding: 1px;
+    border-radius: 20px;
+}
+#reficon:hover{
+    position: absolute; 
+    right: 65px;
+    top:-11px;
+    background-color: rgb(230, 230, 230);
+    padding: 5px;
+    border-radius: 20px;
+}
+#from{
+    position: absolute; 
+    left: 100px; 
+    top: 8px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(68, 68, 68);
+    padding: 10px 15px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+}
+#from:hover{
+    position: absolute; 
+    left: 100px; 
+    top: 8px;
+    background-color: rgb(230, 230, 230);
+    color: rgb(68, 68, 68);
+    padding: 10px 15px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+}
+#nagleft{
+    position: absolute; 
+    left: 15px; 
+    top: 8px;
+    background-color: rgb(255, 255, 255);
+    padding: 8px 12px;
+    color: rgb(80, 80, 80);
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    
+}
+#nagleft:hover{
+    position: absolute; 
+    left: 15px; 
+    top: 8px;
+    background-color: rgb(230, 230, 230);
+    padding: 8px 13px;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+}
+#nagright{
+    position: absolute; 
+    left: 50px; 
+    top: 8px;
+    background-color: rgb(255, 255, 255);
+    padding: 8px 12px;
+    color: rgb(80, 80, 80);
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+}
+#nagright:hover{
+    position: absolute; 
+    left: 50px; 
+    top: 8px;
+    background-color: rgb(230, 230, 230);
+    padding: 8px 13px;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+}
+
+.subafooter{
+    background: rgb(255, 255, 255);
+    height: 6vh;
+    width: 23vw;
+    position: absolute;
+    margin-top: 5.5vh;
+    left: 3vw;
+
+    background-image: url(imgs3/005-inbox.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position-x: 94%; 
+    background-position-y: 23px;
+}
+.subafooter:hover{
+    background: rgb(255, 255, 255);
+    border-bottom: red solid 2px;
+    height: 6vh;
+    width: 23vw;
+    position: absolute;
+    margin-top: 5.5vh;
+    left: 3vw;
+
+    background-image: url(imgs3/005-inbox.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position-x: 94%; 
+    background-position-y: 23px;
+}
+.subbfooter{
+    background: rgb(255, 255, 255);
+    height: 6vh;
+    width: 23vw;
+    position: absolute;
+    left: 26vw;
+    margin-top: 5.5vh;
+
+    background-image: url(imgs3/004-two-users.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position-x: 94%; 
+    background-position-y: 23px;
+}
+.subbfooter:hover{
+    background: rgb(255, 255, 255);
+    border-bottom: red solid 2px;
+    height: 6vh;
+    width: 23vw;
+    position: absolute;
+    left: 26vw;
+    margin-top: 5.5vh;
+
+    background-image: url(imgs3/004-two-users.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position-x: 94%; 
+    background-position-y: 23px;
+}
+.subcfooter{
+    background: rgb(255, 255, 255);
+    border-bottom: red solid 2px;
+    height: 6vh;
+    width: 23vw;
+    position: absolute;
+    left: 49vw;
+    margin-top: 5.5vh;
+    z-index: 1;
+
+    background-image: url(imgs3/005-inbox.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position-x: 94%; 
+    background-position-y: 23px;
+}
+.first{
+    font-family: 'Rubik', sans-serif;
+    color: rgb(44, 44, 44);
+    text-align: right;
+    font-size: 15px;
+    position: relative;
+    top: 5px;
+    right: 36px;
+}
+
+
+
+/* Menu Right */
+.topmenuright{
+    background: rgb(255, 255, 255);
+    height: 8vh;
+    width: 28vw;
+    position: absolute; 
+    right: 0;
+    z-index: 1;
+    border-bottom: 1px solid rgb(238, 238, 238);
+
+}
+#newmail{ 
+    box-shadow: 0px 0px 5px 0px rgba(184, 184, 184, 0.2), 0 0px 10px 0 rgba(148, 147, 147, 0.19);
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 20px;
+    padding: 15px 50px 16px 20px    ;
+    position: absolute; 
+    right: 2vw; 
+    top: 1.5vh;
+
+
+    background-image: url(imgs2/plus.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position-x: 90px; 
+    background-position-y: 12px;
+}
+#newmail:hover{ 
+    box-shadow: 0px 5px 20px 5px rgba(184, 184, 184, 0.2), 0 5px 20px 5px rgba(148, 147, 147, 0.19);
+    background-color: #f3f3f3;
+    border: 0;
+    border-radius: 20px;
+    padding: 15px 50px 16px 20px    ;
+    position: absolute; 
+    right: 2vw; 
+    top: 1.5vh;
+
+    background-image: url(imgs2/plus.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position-x: 90px; 
+    background-position-y: 12px;
+}
+
+.menuright{
+    background: rgb(255, 255, 255);
+    height: 35vh;
+    width: 28vw;
+    position: absolute; 
+    top: 14.1vh;
+    right: 0;
+    overflow-y: scroll;  
+    overflow-x: hidden;
+    direction: rtl;
+    border-bottom: 1px solid rgb(238, 238, 238);
+
+}
+.textmenuright{
+    color: rgb(65, 65, 65);
+    font-family: 'Rubik', sans-serif;
+    font-size: 13px;
+    line-height: 31px;
+    letter-spacing: 1px;
+    text-align: right;
+    position: absolute;
+    padding-right: 40px;
+    top: 5px;
+    right: -5%;
+  
+    width: 150px;
+    height: 280px;   
+}
+.imgsmenu{
+    position: relative;
+    left: 0px;
+    top: 4px;
+    opacity: 70%;
+}
+
+.submenuright{
+    height: 13vh;
+    width: 28vw;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    right: 0;
+    top: 49.2vh;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    direction: rtl;
+    z-index: 1;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+
+}
+.textsubmenuright{
+    color: rgb(65, 65, 65);
+    font-family: 'Rubik', sans-serif;
+    font-size: 13px;
+    line-height: 31px;
+    letter-spacing: 1px;
+    text-align: right;
+    position: absolute;
+    padding-right: 40px;
+    top: 45px; 
+
+    width: 150px;
+    height: 280px;   
+}
+#meet{
+    position: absolute;
+    top: -45;
+    font-weight: bold;
+
+}
+ 
+
+
+#pageone{
+    height: 37.9vh;
+    width: 28vw;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    right: 0px;
+    top: 62.1vh;
+}
+#pagetwo{
+    height: 37.9vh;
+    width: 28vw;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    right: 0px;
+    top: 62.1vh;
+}
+.subsubmenutext{
+    color: rgb(65, 65, 65);
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+    line-height: 31px;
+    text-align: right;
+    position: absolute;
+    top: 45px;
+    right: 14vw;
+    left: 6vw;
+    width: 14vw;
+ 
+}
+
+.call{
+    height: 5vh;
+    width: 14vw;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 0px;
+}
+.call2{
+    height: 5vh;
+    width: 14vw;
+    background-color: rgb(240, 240, 240);
+    position: absolute;
+    bottom: 0px;
+}
+.contact{
+    height: 5vh;
+    width: 14vw;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+}
+.contact2{
+    height: 5vh;
+    width: 14vw;
+    background-color: rgb(240, 240, 240);
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+}
+.imgscall{
+    position: absolute;
+    right: 6vw;
+    top: 15px;
+}
+
+/*  */
+
+
+/* Message */
+.message1{
+    top: -0.1vh ;
+}
+.message2{ 
+    top: 5vh;
+}
+.message3{
+  
+    top: 10.1vh;
+}
+.message4{
+    top: 15.2vh;
+}
+.message5{  
+    top: 20.3vh;
+}
+.message6{   
+    top: 25.4vh;
+}
+.message7{
+   
+    top: 30.5vh;
+}
+.message8{  
+    top: 35.7vh;
+}
+.message9{  
+    top: 40.8vh;
+}
+.message10{  
+    top: 45.9vh;
+}
+.message11{  
+    top: 51vh;
+}
+.message12{
+    top: 56.2vh;
+}
+.message13{
+    top: 61.3vh;
+}
+.message14{
+    top: 66.4vh;
+}
+.message15{ 
+    top: 71.5vh;
+}
+.message16{
+    top: 76.7vh;
+}
+.message17{
+    top: 81.8vh;
+}
+.message18{
+    top: 87vh;
+}
+.message19{
+    top: 92.2vh;
+}
+.message20{
+    top: 97.3vh;
+}
+
+
+.rightmessage{
+    position: absolute;
+    text-align: right;
+    font-family: 'Rubik', sans-serif;
+    font-size: 13px;
+    z-index: 2;
+    width: 40%;
+    bottom: 10%;
+    right: 25px;
+
+}
+.centermessage{
+    position: absolute;
+    text-align: right;
+    right: 40%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 13px;
+    z-index: 2;
+    bottom: 10%;
+}
+.leftmessage{
+    position: absolute;
+    text-align: right;
+    left: 2%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 13px;
+    z-index: 2;
+    bottom: 10%;
+}
+.imgsmessage{
+    position: relative;
+    top: 8px;
+    left: 20px;
+    margin: 4px;
+}
+.imgsmessage:hover{
+    position: relative;
+    top: 8px;
+    left: 20px;
+    margin: 4px;
+}
+
+
+
+
+
+
+
+.allmessage{
+    background: #ffffff;
+    width: 72vw;
+    height: 82vh;
+    position: relative;
+    top: 11.7vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-top: 1px solid rgb(238, 238, 238);
+    direction: rtl;
+
+
+}
+::-webkit-scrollbar {
+    background: rgb(255, 255, 255);
+    width: 10px;
+
+    
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(209, 209, 209);
+    
+}
+.messagec{
+    background: #ffffff;
+    width: 70.4vw;
+    height: 5vh;
+    position: absolute;
+    border-bottom: 1px solid rgb(231, 231, 231);
+    margin: 3px ;
+}
+.messagec:hover{
+    background: #ffffff;
+    width: 70.4vw;
+    height: 5vh;
+    position: absolute;
+    border: 1px solid rgb(255, 255, 255);
+    margin: 3px;
+    box-shadow: 0px 5px 20px 5px rgba(184, 184, 184, 0.2), 0 5px 20px 5px rgba(148, 147, 147, 0.19);
+    z-index: 1;
+
+}
+
+
+
+/*  */
+
+
+
+
+
+
+    
+
+
+
+body{
+    margin: 0;
+    position: relative;
+}

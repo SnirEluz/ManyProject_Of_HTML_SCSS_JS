@@ -1,0 +1,274 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+html{
+    background: black;
+    filter: invert(1);
+}
+@mixin box {
+    border: 1px rgba(128, 128, 128, 0.322) solid;
+    border-radius: 5px;
+    outline: none;
+}
+@mixin focusbox {
+    border: 1px rgba(230, 224, 173, 0.836) solid;
+    border-radius: 5px;
+    outline: none;
+}
+@mixin hoverbox {
+    :hover{
+        border: 1px rgba(230, 224, 173, 0.836) solid;
+        outline: none;
+    }
+}
+@mixin hoverbox {
+    border: 1px rgba(230, 224, 173, 0.836) solid;
+    outline: none;
+}
+.main {
+    height: 100vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.842), rgba(255, 255, 255, 0.596), rgb(255, 255, 255));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .dl{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        width: 55px;
+        height: 30px;
+        background: rgb(255, 255, 255);
+        box-shadow: 0px 0px 10px 3px rgba(226, 226, 226, 0.911);
+        border-radius: 20px;
+        position: fixed;
+        top: 20px;
+        right: 40px;
+        .dark{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 22px;
+            width: 22px;
+            border-radius: 50px;
+            background: rgb(201, 201, 201);
+            margin: 7px;
+            img{
+                height: 16px;
+                width: 16px;
+                opacity: 70%;
+            }
+        }
+    }
+    .mainbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height:430px;
+        width: 400px;
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0px 0px 51px 10px rgba(226, 226, 226, 0.911);
+        transition: 1s;
+        .top {
+            display: flex;
+            filter: invert(1);
+            .buy, a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                width: 200px;
+                height: 70px;
+                border-bottom: 1px rgba(128, 128, 128, 0.219) solid;
+                text-decoration: none;
+
+            }
+            .sell{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                width: 200px;
+                height: 70px;
+                border-bottom: 2px rgb(245, 228, 72) solid;
+            }
+            .buy:hover{
+                border-bottom: 2px rgb(245, 228, 72) solid;
+            }
+        }
+        .footer{
+            display: flex;
+            align-items: center;
+            width: 400px;
+            height: 40px;
+            p{
+                font-size: 12px;
+                color:rgb(77, 77, 77);
+                font-weight: 300;
+                padding-left: 20px;
+            }
+        }
+        .middle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            height: 210px;
+            width: 400px;
+            .from{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 95px;
+                width: 360px;
+                background: rgba(236, 236, 236, 0.568);
+                border-radius: 10px;
+                .title{
+                    padding-left: 21px;
+                    font-weight: 300
+                }
+                .swap{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 50px;
+                    width: 360px;
+                    .amount{
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-end;
+                        width: 230px;
+                        height: 50px;
+                        input{
+                            padding: 24px 60px 10px 20px;
+                            outline: none;
+                            border: 0px;
+                            background: none;
+                        }
+                    }
+                    .coins{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 130px;
+                        height: 50px;
+                        .coin{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-evenly;
+                            width: 100px;
+                            height: 40px;
+                            background: rgb(255, 255, 255);
+                            border-radius: 20px;
+                            box-shadow: 0px 0px 5px 2px rgba(226, 226, 226, 0.911);
+                            h2{
+                                font-size: 13px;
+                            }
+                            .eth{
+                                height: 30px;
+                                position: relative;
+                                left: 5px;
+                                filter: invert(1);
+                            }
+                            .arrow{
+                                opacity: 70%;
+                                height: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+            .to{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 95px;
+                width: 360px;
+                background: rgba(236, 236, 236, 0.568);
+                border-radius: 10px;
+                .title{
+                    padding-left: 21px;
+                    font-weight: 300
+                }
+                .swap{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 50px;
+                    width: 360px;
+                    .amount{
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-end;
+                        width: 230px;
+                        height: 50px;
+                        input{
+                            padding: 24px 60px 10px 20px;
+                            outline: none;
+                            border: 0px;
+                            background: none;
+                        }
+                    }
+                    .coins{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 130px;
+                        height: 50px;
+                        .coin{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-evenly;
+                            width: 100px;
+                            height: 40px;
+                            background: rgb(255, 255, 255);
+                            border-radius: 20px;
+                            box-shadow: 0px 0px 5px 2px rgba(226, 226, 226, 0.911);
+                            h2{
+                                font-size: 13px;
+                            }
+                            .eth{
+                                height: 30px;
+                                position: relative;
+                                left: 5px;
+                                filter: invert(1);
+                            }
+                            .arrow{
+                                opacity: 70%;
+                                height: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+            .from:hover,
+            .to:hover{
+                background: rgba(177, 177, 177, 0.274);
+            }
+        }
+        .bottom {
+            height:90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            filter: invert(1);
+            button{
+                font-size: 13px;
+                font-weight: 400;
+                outline: none;
+                border: none;
+                background: none;
+                padding: 0;
+                height: 45px;
+                width: 360px;
+                border-radius: 5px;
+                background: rgba(243, 220, 8, 0.938);
+            }
+            button:hover{
+                background: rgba(243, 220, 8, 0.733);
+            }
+        }
+    }
+}

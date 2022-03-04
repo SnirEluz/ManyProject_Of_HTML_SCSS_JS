@@ -1,0 +1,386 @@
+* {
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: roboto;
+  -webkit-select: all;
+}
+
+.main {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(233, 210, 0, 0.842)), color-stop(rgba(233, 210, 0, 0.411)), to(white));
+  background: linear-gradient(rgba(233, 210, 0, 0.842), rgba(233, 210, 0, 0.411), white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 55px;
+  height: 30px;
+  background: white;
+  -webkit-box-shadow: 0px 0px 10px 3px rgba(226, 226, 226, 0.911);
+          box-shadow: 0px 0px 10px 3px rgba(226, 226, 226, 0.911);
+  border-radius: 20px;
+  position: fixed;
+  top: 20px;
+  right: 40px;
+}
+
+.main .dl .light {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 22px;
+  width: 22px;
+  border-radius: 50px;
+  background: #ececec;
+  margin: 7px;
+}
+
+.main .dl .light img {
+  height: 16px;
+  width: 16px;
+  opacity: 70%;
+}
+
+.main .mainbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 430px;
+  width: 400px;
+  background: white;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 51px 10px rgba(226, 226, 226, 0.911);
+          box-shadow: 0px 0px 51px 10px rgba(226, 226, 226, 0.911);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.main .mainbox .top {
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid rgba(230, 224, 173, 0.219);
+}
+
+.main .mainbox .top h3 {
+  color: #424242;
+  padding-top: 10px;
+  width: 300px;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.main .mainbox .middle {
+  height: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .mainbox .middle .goback {
+  width: 300px;
+}
+
+.main .mainbox .middle .goback a, .main .mainbox .middle .goback p {
+  text-align: left;
+  text-decoration: none;
+  border-bottom: none;
+  color: #757575;
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+
+.main .mainbox .middle .card {
+  margin: 10px;
+}
+
+.main .mainbox .middle .card input {
+  border: 1px rgba(128, 128, 128, 0.322) solid;
+  border-radius: 5px;
+  outline: none;
+  padding: 13px 140px 13px 15px;
+}
+
+.main .mainbox .middle .card input:hover {
+  border: 1px rgba(230, 224, 173, 0.836) solid;
+  outline: none;
+}
+
+.main .mainbox .middle .card input:focus {
+  border: 1px rgba(230, 224, 173, 0.836) solid;
+  border-radius: 5px;
+  outline: none;
+}
+
+.main .mainbox .middle .card ::-webkit-input-placeholder {
+  color: dimgray;
+  font-weight: 400;
+}
+
+.main .mainbox .middle .card :-ms-input-placeholder {
+  color: dimgray;
+  font-weight: 400;
+}
+
+.main .mainbox .middle .card ::-ms-input-placeholder {
+  color: dimgray;
+  font-weight: 400;
+}
+
+.main .mainbox .middle .card ::placeholder {
+  color: dimgray;
+  font-weight: 400;
+}
+
+.main .mainbox .middle .card :focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.main .mainbox .middle .card :focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.main .mainbox .middle .card :focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.main .mainbox .middle .card :focus::placeholder {
+  color: transparent;
+}
+
+.main .mainbox .middle .my {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px;
+}
+
+.main .mainbox .middle .my .months select {
+  color: #535353;
+  font-weight: 400;
+  border: 1px rgba(128, 128, 128, 0.322) solid;
+  border-radius: 5px;
+  outline: none;
+  margin: 5px;
+  padding: 13px 67.5px 13px 15px;
+}
+
+.main .mainbox .middle .my .months :hover {
+  border: 1px rgba(230, 224, 173, 0.836) solid;
+  outline: none;
+}
+
+.main .mainbox .middle .my .months :focus {
+  border: 1px rgba(230, 224, 173, 0.836) solid;
+  border-radius: 5px;
+  outline: none;
+}
+
+.main .mainbox .middle .my .years select {
+  color: #535353;
+  font-weight: 400;
+  border: 1px rgba(128, 128, 128, 0.322) solid;
+  border-radius: 5px;
+  outline: none;
+  margin: 5px;
+  padding: 13px 57.5px 13px 15px;
+}
+
+.main .mainbox .middle .my .years :hover {
+  border: 1px rgba(230, 224, 173, 0.836) solid;
+  outline: none;
+}
+
+.main .mainbox .middle .my .years :focus {
+  border: 1px rgba(230, 224, 173, 0.836) solid;
+  border-radius: 5px;
+  outline: none;
+}
+
+.main .mainbox .middle .cvv {
+  margin: 10px;
+}
+
+.main .mainbox .middle .cvv input {
+  border: 1px rgba(128, 128, 128, 0.322) solid;
+  border-radius: 5px;
+  outline: none;
+  padding: 13px 140px 13px 15px;
+}
+
+.main .mainbox .middle .cvv input:hover {
+  border: 1px rgba(230, 224, 173, 0.836) solid;
+  outline: none;
+}
+
+.main .mainbox .middle .cvv input:focus {
+  border: 1px rgba(230, 224, 173, 0.836) solid;
+  border-radius: 5px;
+  outline: none;
+}
+
+.main .mainbox .middle .cvv :focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.main .mainbox .middle .cvv :focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.main .mainbox .middle .cvv :focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.main .mainbox .middle .cvv :focus::placeholder {
+  color: transparent;
+}
+
+.main .mainbox .middle .cvv ::-webkit-input-placeholder {
+  color: #535353;
+  font-weight: 400;
+}
+
+.main .mainbox .middle .cvv :-ms-input-placeholder {
+  color: #535353;
+  font-weight: 400;
+}
+
+.main .mainbox .middle .cvv ::-ms-input-placeholder {
+  color: #535353;
+  font-weight: 400;
+}
+
+.main .mainbox .middle .cvv ::placeholder {
+  color: #535353;
+  font-weight: 400;
+}
+
+.main .mainbox .middle .info {
+  padding-top: 10px;
+  padding-left: 2px;
+  font-size: 12px;
+  font-weight: 100;
+  width: 300px;
+}
+
+.main .mainbox .bottom {
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 30px;
+}
+
+.main .mainbox .bottom button {
+  font-size: 13px;
+  font-weight: 400;
+  outline: none;
+  border: none;
+  background: none;
+  padding: 0;
+  height: 45px;
+  width: 300px;
+  border-radius: 5px;
+  background: rgba(243, 220, 8, 0.938);
+}
+
+.main .mainbox .bottom button:hover {
+  background: rgba(243, 220, 8, 0.733);
+}
+
+.main .mainbox:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  height: 480px;
+}
+
+.main .mainbox:hover .pic {
+  position: fixed;
+  height: 150px;
+  width: 150px;
+  top: -90px;
+  right: 125px;
+  background-image: url(https://cdn-icons-png.flaticon.com/512/3443/3443846.png);
+  background-size: cover;
+  -webkit-animation: fadein 1s linear;
+          animation: fadein 1s linear;
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=credit.css.map */
